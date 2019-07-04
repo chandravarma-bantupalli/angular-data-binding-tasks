@@ -16,6 +16,10 @@ import { TaskFiveGchildComponent } from './scenario5/task-five/task-five-child/t
 import { TaskSixParentComponent } from './scenario6/task-six-parent/task-six-parent.component';
 import { TaskSixChild1Component } from './scenario6/task-six-parent/task-six-child1/task-six-child1.component';
 import { TaskSixChild2Component } from './scenario6/task-six-parent/task-six-child2/task-six-child2.component';
+import { Task7ParentComponent } from './scenario7/task7-parent/task7-parent.component';
+import { Task7Child1Component } from './scenario7/task7-parent/task7-child1/task7-child1.component';
+import { Task7Child2Component } from './scenario7/task7-parent/task7-child2/task7-child2.component';
+import { SiblingInteractionService } from './sibling-interaction.service';
 
 @NgModule({
   declarations: [
@@ -31,14 +35,17 @@ import { TaskSixChild2Component } from './scenario6/task-six-parent/task-six-chi
     TaskFiveGchildComponent,
     TaskSixParentComponent,
     TaskSixChild1Component,
-    TaskSixChild2Component
+    TaskSixChild2Component,
+    Task7ParentComponent,
+    Task7Child1Component,
+    Task7Child2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ SiblingInteractionService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
